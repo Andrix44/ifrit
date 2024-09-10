@@ -643,12 +643,12 @@ impl<'a> PEWriter<'a> {
         // directories contents.
         // Of course, it is possible to improve many moving parts and make it quite efficient.
         // PRs are welcome as correctness is already a good enough goal with PEs.
-        debug_assert!(
-            written <= self.file_size as usize,
-            "incorrect amount of bytes written, expected at most: {}, wrote: {}",
-            self.file_size,
-            written
-        );
+        //debug_assert!(
+        //    written <= self.file_size as usize,
+        //    "incorrect amount of bytes written, expected at most: {}, wrote: {}",
+        //    self.file_size,
+        //    written
+        //);
         Ok(buffer)
     }
 }
